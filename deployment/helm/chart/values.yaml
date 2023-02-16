@@ -1,0 +1,5 @@
+---
+image:
+  repository: ""
+
+httpPort: "8080"
