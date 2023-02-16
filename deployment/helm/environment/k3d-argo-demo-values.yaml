@@ -1,0 +1,5 @@
+---
+image:
+  repository: "k3d-reg.localhost:5001"
+
+httpPort: "8080"
