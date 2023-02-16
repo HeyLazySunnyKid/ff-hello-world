@@ -1,5 +1,5 @@
 ---
 image:
-  repository: "k3d-reg.localhost:5001"
+  repository: "k3d-reg.localhost:5001/services/ff-hello-world"
 
 httpPort: "8080"
