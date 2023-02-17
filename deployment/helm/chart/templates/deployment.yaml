@@ -20,5 +20,6 @@ spec:
         image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
         ports:
         - name: http-web
-          containerPort: {{ .Values.httpPort }}
+          port: 80
+          containerPort: 8080
           protocol: TCP
