@@ -15,4 +15,4 @@ spec:
           service:
             name: {{ .Chart.Name }}-http
             port:
-              number: 8000
+              number: 8080
