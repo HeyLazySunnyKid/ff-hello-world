@@ -1,5 +1,10 @@
 ---
 image:
+  # Where to get application
   repository: ""
 
+# Main Http Web Port
 httpPort: "8080"
+
+# Prefix for accessing throw loadbalancer
+prefix: "/ff"

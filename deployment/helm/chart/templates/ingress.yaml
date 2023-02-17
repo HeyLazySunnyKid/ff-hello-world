@@ -2,17 +2,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Chart.name }}
+  name: {{ .Chart.Name }}
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
   - http:
       paths:
-      - path: "/{{.Chart.name }}"
+      - path: "{{ .Values.prefix }}"
         pathType: Prefix
         backend:
           service:
-            name: {{ .Chart.name }}
+            name: {{ .Chart.Name }}
             port:
               number: 8000
